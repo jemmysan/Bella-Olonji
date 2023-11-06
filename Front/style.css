@@ -1,0 +1,289 @@
+
+:root{
+    --orange : orangered;
+    --white : white;
+    --grayDark : rgb(61, 61, 61);
+    --grayLight : rgb(94, 93, 93);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/********* HEADER **********/
+
+#header {
+    padding: 0% 2%;
+    background-color: var(white);
+    flex : 1;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height : auto;
+}
+
+
+.img-logo {
+    background-image: url(../images/Logo.png);
+    width: 10%;
+    height : 80px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+
+#menu ,ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+#menu {
+    width: 90%;
+    justify-content: flex-end;
+}
+
+
+#menu ul{
+    width : 40%; 
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+    color : var(--grayDark)
+}
+
+
+#menu ul li:hover
+{
+    cursor: pointer;
+}
+
+
+#menu ul li:hover
+{
+    color : var(--orange)
+}
+
+
+/********* BODY **********/
+#upper-body
+{
+    width : 100%;
+    height : 1050px;
+    padding: 0 2%;
+    /* background-color: red; */
+    position : relative;
+}
+
+#food-cont{
+    width : 100%;
+    height : 500px;
+    background-image: url(../images/baniere.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:var(--grayDark);
+}
+
+#food-cont ,.food-text > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+}
+
+
+
+.food-text > div:nth-child(1)
+{
+    padding : 2%;
+    font-size : 1.6rem
+}
+
+.food-text > div:nth-child(2), div:nth-child(3)
+{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.food-text > div:nth-child(4) 
+{
+    font-size: 1.2rem;
+    padding: 3%;
+}
+
+.food-app
+{
+    display: flex;
+    justify-self: center;
+    width: 100%;
+}
+
+.food-app > div
+{
+    width : 20%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    font-size : 1.6rem;
+    border : 2px solid var(--orange);
+    border-radius: 30px;
+    padding: 2%;
+}
+
+.food-app > div:nth-child(1)
+{
+    background-color: var(--orange);
+}
+
+.food-app > div:nth-child(2)
+{
+    border: 2px solid var(--white);
+}
+
+
+.two-mobiles
+{
+    background-image: url(../images/2telephones.png);
+    width : 500px;
+    height : 590px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    position : absolute; 
+    transform: translate(80%, -28%);
+}
+
+.app-work,.var-slog, .account,.account-instruc, .account-body, .varities, .variety-body, .var-text
+{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    font-size: 2rem; 
+}
+
+.app-work, .var-slog
+{
+    width : 50%;
+    font-size: 3rem;
+    color: var(--grayDark);
+    /* background-color: aquamarine; */
+}
+
+.account , .varities
+{
+    flex : 1;
+    height : auto;
+    flex-direction: column;
+}
+
+.account-form
+{
+    width : 450px;
+    height: 500px;
+    background-image: url(../images/RectangleImg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+}
+
+.account-instruc, .var-text
+{
+    flex : 1;
+    flex-direction: column;
+    align-items: start;
+    color: var(--grayLight);
+}
+
+.account-instruc > :nth-child(1), .var-text  > :nth-child(1)
+{
+    font-size: 1.2rem;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.account-instruc > :nth-child(2), :nth-child(3), 
+.var-text > :nth-child(2), :nth-child(3)
+{
+    font-size : 1.6rem;
+    font-weight: bold;
+}
+
+.var-text > :nth-child(4), :nth-child(5)
+{
+    font-size : 1rem;
+}
+
+.var-form
+{
+    width : 450px;
+    height: 550px;
+    background-image: url(../images/RectangleImg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+
+.var-slog{
+    font-weight: bold;
+}
+
+
+
+.footer, .icone
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.icone{
+    justify-content:space-between;
+    padding-top: 2%;
+    width: 10%;
+    /* background-color: blue; */
+}
+
+.icone > div:nth-child(1),
+.icone > div:nth-child(2),
+.icone > div:nth-child(3)
+{
+  background-repeat: no-repeat;
+  height: 50px;
+  width : 50px;
+}
+
+.icone > div:nth-child(1)
+{
+  background-image: url(../images/facebook.png);
+}
+
+
+
+.icone > div:nth-child(2)
+{
+  background-image: url(../images/instagramicone.png);
+}
+
+
+.icone > div:nth-child(3)
+{
+  background-image: url(../images/twitter.png);
+}
+
+.footer >div:nth-child(3)
+{
+    font-size: 1rem;
+}
+
+
+
+
